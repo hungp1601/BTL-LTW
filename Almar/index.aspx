@@ -29,10 +29,10 @@
                         <a href="">Blog</a>
                     </div>
                     <div class="header-right-1">
-                        <a href="about.html">About</a>
+                        <a href="about.aspx">About</a>
                     </div>
                     <div class="header-right-1">
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.aspx">Contact</a>
                     </div>
                 </div>
 
@@ -67,8 +67,8 @@
             <div id="mySidenav" class="mySidenav none">
                 <a href="" class="select">You</a>
                 <a href="" class="select">Blog</a>
-                <a href="about.html" class="select">About</a>
-                <a href="contact.html" class="select">Contact</a>
+                <a href="about.aspx" class="select">About</a>
+                <a href="contact.aspx" class="select">Contact</a>
                 <a href="" class="select">Account</a>
                 <a href="sign-in.html" class="button none" id="button" runat="server" >Get Started </a>
             </div>
@@ -143,7 +143,7 @@
             <div class="footer-right col-2">
 
                 <a class="footer-link" href="">You</a>
-                <a class="footer-link" href="about.html">About</a>
+                <a class="footer-link" href="about.aspx">About</a>
                 <a class="footer-link" href="sign-in.html"  id="link2" runat="server" >Get Started</a>
                 <div class="icon">
                     <img src="images/twitter.png" alt="" class="ico">
