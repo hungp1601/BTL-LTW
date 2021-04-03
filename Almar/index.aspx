@@ -1,7 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="Almar.index" %>
 
-<head>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +11,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/page-control.js"></script>
 </head>
-
 <body>
-    <div class="header col-12">
+    <form id="form1" runat="server">
+        <div class="header col-12">
         <div class="header-1">
             <div class="header-left">
                 <div class="title">
@@ -38,7 +40,8 @@
                     <div class="header-right-2 setting">
                         <a href=""> Account </a>
                     </div>
-                    <a href="sign-in.html" class="header-right-2 setting setting-1" id="link-1" >Get Started </a>
+
+                    <a href="sign-in.html" class="header-right-2 setting setting-1"  id="link1" runat="server" >Get Started</a>
                 </div>
             </div>
         </div>
@@ -67,7 +70,7 @@
                 <a href="about.html" class="select">About</a>
                 <a href="contact.html" class="select">Contact</a>
                 <a href="" class="select">Account</a>
-                <a href="sign-in.html" class="button none" id="button"  id="link-2">Get Started </a>
+                <a href="sign-in.html" class="button none" id="button" runat="server" >Get Started </a>
             </div>
             <div></div>
         </div>
@@ -141,7 +144,7 @@
 
                 <a class="footer-link" href="">You</a>
                 <a class="footer-link" href="about.html">About</a>
-                <a class="footer-link" href="sign-in.html"  id="link-3">Get Started</a>
+                <a class="footer-link" href="sign-in.html"  id="link2" runat="server" >Get Started</a>
                 <div class="icon">
                     <img src="images/twitter.png" alt="" class="ico">
                     <img src="images/youtube.png" alt="" class="ico">
@@ -149,8 +152,7 @@
                 </div>
             </div>
         </div>
-
     </div>
+    </form>
 </body>
-
 </html>

@@ -70,7 +70,9 @@
     <Content Include="about.html" />
     <Content Include="contact.html" />
     <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
     <Content Include="index.html" />
+    <Content Include="logout.aspx" />
     <Content Include="sign-in.html" />
     <Content Include="sign-up.html" />
     <Content Include="signin.aspx" />
@@ -78,6 +80,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="signin.aspx.cs">
       <DependentUpon>signin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

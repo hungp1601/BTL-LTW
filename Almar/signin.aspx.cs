@@ -17,7 +17,7 @@ namespace Almar
             {
                 Session["c-user"] =username;
                 Response.Write("Hi " + Session["c-user"]+ " Signed in successfully, please wait 3 seconds");
-                Response.AppendHeader("Refresh", "3;url=index.html");
+                Response.AppendHeader("Refresh", "3;url=index.aspx");
                 
             }
             else
