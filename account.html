@@ -1,16 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin-Almar</title>
+    <title>Account-Almar</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
-    <script src="js/page-control.js"></script>
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/account.css" />
+    <script src="js/page-control.js"></script>
+
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <div class="header-1">
             <div class="header-left">
                 <div class="title">
-                    <a href="index.aspx" class="title-1">Almar</a>
+                    <a href="index.html" class="title-1">Almar</a>
                 </div>
             </div>
             <div class="header-right">
@@ -27,22 +28,24 @@
                         <a href="">You</a>
                     </div>
                     <div class="header-right-1">
-                        <a href="blog.aspx">Blog</a>
+                        <a href="blog.html">Blog</a>
+
+                        
+                    </div>
+                    <div class="header-right-1 ">
+                        <a href="">About</a>
                     </div>
                     <div class="header-right-1">
-                        <a href="about.aspx">About</a>
-                    </div>
-                    <div class="header-right-1">
-                        <a href="contact.aspx">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                 </div>
 
                 <div class="header-right">
-                    <div class="header-right-2 setting">
-                        <a href="account.aspx"> Account </a>
+                    <div class="header-right-2 setting selected">
+                        <a href=""> Account </a>
                     </div>
 
-                    <a href="" class="header-right-2 setting setting-1">Get Started</a>
+                    <a href="sign-in.html" class="header-right-2 setting setting-1">Get Started</a>
                 </div>
             </div>
         </div>
@@ -52,7 +55,7 @@
             <div class="header-mobile-1">
                 <div class="mobile-left">
                     <div class="title">
-                        <a href="index.aspx" class="title-1" id="title-1">Almar</a>
+                        <a href="index.html" class="title-1" id="title-1">Almar</a>
                     </div>
                 </div>
                 <div>
@@ -67,13 +70,12 @@
         <div id="menu-mobile" class="tang-hinh">
             <div id="mySidenav" class="mySidenav none">
                 <a href="" class="select">You</a>
-                <a href="blog.aspx" class="select">Blog</a>
-                <a href="about.aspx" class="select">About</a>
-                <a href="contact.aspx" class="select">Contact</a>
-                <a href="account.aspx" class="select">Account</a>
-                <a href="" class="button none" id="button">Get Started </a>
+                <a href="blog.html" class="select">Blog</a>
+                <a href="" class="select">About</a>
+                <a href="contact.html" class="select">Contact</a>
+                <a href="" class="select">Account</a>
+                <a href="sign-in.html" class="button none" id="button">Get Started </a>
             </div>
-            <div></div>
         </div>
         <div>
 
@@ -81,30 +83,19 @@
     </div>
     <div class="body-about">
         <div class="body-about-0">
-            <div id="sign-in">
-                <form method="POST" action="signin.aspx" id="login">
-                    <div class="box">
-                        <h1>Sign In</h1>
-                        <input type="text" name="username" id="username" class="username" placeholder="Username"
-                               value="" />
-                        <input type="password" name="password" id="password" class="password" placeholder="Password"
-                               value="" />
-                        <div class="sign">
-                            <div type="submit" onclick="check()" class="no-under btn" style="border: 2px solid black;">
-                                Sign
-                                In
-                            </div>
-                            <a href="sign-up.html" type="submit" onclick="swap1()" class="no-under" id="btn2">Sign Up</a>
-                        </div>
-
-                    </div>
-
-                </form>
+            <h1>Hi, bear1</h1>
+            <h2>Change your avatar</h2><br>
+            <img src="images/avt-default.jpg" class="avt"width="70%" onclick="changeavt()" >
+            <div class="changeavt hide" id="changeavt">
+                <input id="Button1" class="btn-1" type="button" value="Thay ảnh" OnServerClick="submit" runat="server" style="cursor: pointer; height: 23px"/>
+                <input id="Button1" class="btn-1"type="button" value="Thay ảnh" OnServerClick="submit" runat="server" style="cursor: pointer; height: 23px"/>
             </div>
-
-
+            <h3>
+                Current onlines: 
+            </h3>
         </div>
-
+       
+        
     </div>
     <div class="footer col-12">
         <div class="footer-1">
@@ -124,8 +115,8 @@
             <div class="footer-right col-2">
 
                 <a class="footer-link" href="">You</a>
-                <a class="footer-link" href="about.aspx">About</a>
-                <a class="footer-link" href="">Get Started</a>
+                <a class="footer-link" href="about.html">About</a>
+                <a class="footer-link" href="sign-in.html">Get Started</a>
                 <div class="icon">
                     <img src="images/twitter.png" alt="" class="ico">
                     <img src="images/youtube.png" alt="" class="ico">

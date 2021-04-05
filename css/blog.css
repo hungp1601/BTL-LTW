@@ -1,17 +1,16 @@
-
 .bodyblog-0{
     padding:6.6vmax 8vw;
     display: flex;
     flex-direction:column;
-    justify-content: center;
+    align-items: center;
 }
 
-.user{
+.status>div{
     padding: 16px;
     align-items: center;
     display: flex;
 }
-.avt{
+.status>div>img{
     width: 32px;
     height:32px;
     border-radius:50% ;
@@ -19,33 +18,25 @@
     padding: 1px;
     
 }
-.name{
+.status>div>span{
     padding-left: 8px;
     font-size: 1.2rem;
     font-weight: 600;
     color: #000;
 }
-.content{
+.status>p{
     padding:8px 16px;
     margin-bottom:16px;
     font-size: 1.5rem;
     font-weight: 400;
-    font-weight:
 }
 .new-stt{
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 
-.txtContent{
-    width:75vw;
-    font-size:1.5rem;
-    resize:none;
-    border:1px solid #000;
-    border-radius:5px;
-}
+
 .txtContent:focus{
     border:1px solid #000;
 }
@@ -60,4 +51,5 @@
     cursor:pointer;
     width:fit-content;
     height:fit-content;
+
 }

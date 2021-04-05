@@ -38,7 +38,7 @@
 
                 <div class="header-right">
                     <div class="header-right-2 setting">
-                        <a href=""> Account </a>
+                        <a href="account.aspx"> Account </a>
                     </div>
 
                     <a href="sign-in.html" class="header-right-2 setting setting-1"  id="link1" runat="server" >Get Started</a>
@@ -69,7 +69,7 @@
                 <a href="blog.aspx" class="select">Blog</a>
                 <a href="about.aspx" class="select">About</a>
                 <a href="contact.aspx" class="select">Contact</a>
-                <a href="" class="select">Account</a>
+                <a href="account.aspx" class="select">Account</a>
                 <a href="sign-in.html" class="button none" id="button" runat="server" >Get Started </a>
             </div>
             <div></div>

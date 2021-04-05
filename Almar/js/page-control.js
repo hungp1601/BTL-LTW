@@ -41,3 +41,6 @@ function post(){
         document.getElementById("newstt").submit();
     }
 }
+function changeavt(){
+    document.getElementById("changeavt").classList.toggle("hide");
+}

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Almar
 {
@@ -14,7 +13,8 @@ namespace Almar
             user acc = null;
             //bool isSigned = listacc.Any(x => x.Username == username && x.Password == password);
             bool isSigned = false;
-            foreach (user i in listacc){
+            foreach (user i in listacc)
+            {
                 if (i.Username == username && i.Password == password)
                 {
                     isSigned = true;

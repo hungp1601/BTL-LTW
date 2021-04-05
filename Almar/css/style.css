@@ -58,7 +58,7 @@
 .col-12 {
   width: 100%;
 }
-.selected{
+.selected {
   text-decoration: underline;
   text-underline-position: under;
 }
@@ -349,7 +349,7 @@ header {
     width: 100%;
   }
 
-  .display{
+  .display {
     display: block;
   }
   .header-1 {

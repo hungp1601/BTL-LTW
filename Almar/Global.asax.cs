@@ -15,7 +15,7 @@ namespace Almar
         {
             Session["list"] = new List<user>();
             Session["c-user"] = null;
-            Application["onlineAcc"] = (int)Application["onlineAcc"]+1;
+            Application["onlineAcc"] = (int)Application["onlineAcc"] + 1;
             Session["listpost"] = new List<status>();
         }
 

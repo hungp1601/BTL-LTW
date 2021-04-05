@@ -16,7 +16,7 @@ namespace Almar
                 link2.HRef = "logout.aspx";
                 button.InnerText = "Log Out";
                 button.HRef = "logout.aspx";
-                
+
             }
             else
             {
@@ -28,7 +28,7 @@ namespace Almar
             for (int j = listpost.Count - 1; j >= 0; --j)
             {
                 var i = listpost[j];
-                res += "<div><img src ="+"../images/"+i.Avt.ToString()+" /><span>" + i.Name + "</span></div><p>" + i.Content + "</p> ";
+                res += "<div><img src =" + "../images/" + i.Avt.ToString() + " /><span>" + i.Name + "</span></div><p>" + i.Content + "</p> ";
             }
             status.InnerHtml = res;
 
