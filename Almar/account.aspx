@@ -51,7 +51,7 @@
                             <a style="text-decoration: underline; text-underline-position: under;" href="#">Account </a>
                         </div>
 
-                        <a href="sign-in.html" class="header-right-2 setting setting-1">Get Started</a>
+                        <a href="sign-in.html" class="header-right-2 setting setting-1" id="link1" runat="server">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                     <a href="about.aspx" class="select">About</a>
                     <a href="contact.aspx" class="select">Contact</a>
                     <a href="#" class="select">Account</a>
-                    <a href="sign-in.html" class="button none" id="button">Get Started </a>
+                    <a href="sign-in.html" class="button none" id="button" runat="server">Get Started </a>
                 </div>
             </div>
             <div>
@@ -113,7 +113,7 @@
 
                 <a class="footer-link" href="">You</a>
                 <a class="footer-link" href="about.aspx">About</a>
-                <a class="footer-link" href="sign-in.html">Get Started</a>
+                <a class="footer-link" href="sign-in.html" runat="server" id ="link2">Get Started</a>
                 <div class="icon">
                     <img src="images/twitter.png" alt="" class="ico">
                     <img src="images/youtube.png" alt="" class="ico">

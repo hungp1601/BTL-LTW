@@ -33,6 +33,7 @@
             justify-content: flex-start;
             .bodyblog-0
         }
+
         {
             padding: 6.6vmax 8vw;
             display: flex;
@@ -91,8 +92,6 @@
             width: fit-content;
             height: fit-content;
         }
-
-        
     </style>
     <script>
         function poststt() {
@@ -173,6 +172,7 @@
         </div>
         <div>
         </div>
+
     </div>
     <div class="body-about">
         <div class="bodyblog-0">
