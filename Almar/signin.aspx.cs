@@ -11,14 +11,20 @@ namespace Almar
             string username = Request.Form["username"];
             string password = Request.Form["password"];
             List<user> listacc = (List<user>)Session["list"];
-            user acc = new user(username, password);
-            bool isSigned = listacc.Any(x => x.Username == username && x.Password == password);
+            user acc = null;
+            //bool isSigned = listacc.Any(x => x.Username == username && x.Password == password);
+            bool isSigned = false;
+            foreach (user i in listacc){
+                if (i.Username == username && i.Password == password)
+                {
+                    isSigned = true;
+                    acc = i;
+                }
+            }
             if (isSigned)
             {
-                Session["c-user"] =username;
-                Response.Write("Hi " + Session["c-user"]+ " Signed in successfully, please wait 3 seconds");
-                Response.AppendHeader("Refresh", "3;url=index.aspx");
-                
+                Session["c-user"] = acc;
+                Response.Redirect("index.aspx");
             }
             else
             {

@@ -26,7 +26,7 @@
                         <a href="">You</a>
                     </div>
                     <div class="header-right-1">
-                        <a href="">Blog</a>
+                        <a href="blog.aspx">Blog</a>
                     </div>
                     <div class="header-right-1">
                         <a href="about.aspx">About</a>
@@ -66,7 +66,7 @@
         <div id="menu-mobile" class="tang-hinh none">
             <div id="mySidenav" class="mySidenav none">
                 <a href="" class="select">You</a>
-                <a href="" class="select">Blog</a>
+                <a href="blog.aspx" class="select">Blog</a>
                 <a href="about.aspx" class="select">About</a>
                 <a href="contact.aspx" class="select">Contact</a>
                 <a href="" class="select">Account</a>

@@ -28,7 +28,7 @@
                         <a href="">You</a>
                     </div>
                     <div class="header-right-1">
-                        <a href="">Blog</a>
+                        <a href="blog.aspx">Blog</a>
                     </div>
                     <div class="header-right-1 selected">
                         <a href="">About</a>
@@ -68,7 +68,7 @@
         <div id="menu-mobile" class="tang-hinh">
             <div id="mySidenav" class="mySidenav none">
                 <a href="#" class="select">You</a>
-                <a href="#" class="select">Blog</a>
+                <a href="blog.aspx" class="select">Blog</a>
                 <a href="#" class="select">About</a>
                 <a href="contact.aspx" class="select">Contact</a>
                 <a href="#" class="select">Account</a>
@@ -119,7 +119,7 @@
             <div class="footer-right col-2">
 
                 <a class="footer-link" href="">You</a>
-                <a class="footer-link" href="">About</a>
+                <a class="footer-link" href="#">About</a>
                 <a class="footer-link" href="sign-in.html" id="link2" runat="server">Get Started</a>
                 <div class="icon">
                     <img src="images/twitter.png" alt="" class="ico"/>

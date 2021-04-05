@@ -1,0 +1,63 @@
+
+.bodyblog-0{
+    padding:6.6vmax 8vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.user{
+    padding: 16px;
+    align-items: center;
+    display: flex;
+}
+.avt{
+    width: 32px;
+    height:32px;
+    border-radius:50% ;
+    border: 2px solid red;
+    padding: 1px;
+    
+}
+.name{
+    padding-left: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+.content{
+    padding:8px 16px;
+    margin-bottom:16px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-weight:
+}
+.new-stt{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.txtContent{
+    width:75vw;
+    font-size:1.5rem;
+    resize:none;
+    border:1px solid #000;
+    border-radius:5px;
+}
+.txtContent:focus{
+    border:1px solid #000;
+}
+.submit{
+    text-align: right;
+    border-radius: 6px;
+    border:1px solid #000;
+    margin-top:8px;
+    background: #000;
+    color: #fff;
+    padding:8px 16px;
+    cursor:pointer;
+    width:fit-content;
+    height:fit-content;
+}
