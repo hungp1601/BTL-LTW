@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/blog.css"/>
+    <link rel="stylesheet" href="css/blog.css" />
     <script src="js/page-control.js"></script>
-    
+
 </head>
+
 <body>
     <div class="header-about col-12">
         <div class="header-1">
@@ -26,10 +28,10 @@
                         <a href="">You</a>
                     </div>
                     <div class="header-right-1 selected">
-                        <a href="">Blog</a>
+                        <a href="blog.html">Blog</a>
                     </div>
                     <div class="header-right-1">
-                        <a href="">About</a>
+                        <a href="about.html">About</a>
                     </div>
                     <div class="header-right-1">
                         <a href="contact.html">Contact</a>
@@ -38,7 +40,7 @@
 
                 <div class="header-right">
                     <div class="header-right-2 setting">
-                        <a href=""> Account </a>
+                        <a href="account.html"> Account </a>
                     </div>
 
                     <a href="sign-in.html" class="header-right-2 setting setting-1">Get Started</a>
@@ -67,12 +69,12 @@
             <div id="mySidenav" class="mySidenav none">
                 <a href="" class="select">You</a>
                 <a href="" class="select">Blog</a>
-                <a href="" class="select">About</a>
+                <a href="about.html" class="select">About</a>
                 <a href="contact.html" class="select">Contact</a>
-                <a href="" class="select">Account</a>
+                <a href="account.html" class="select">Account</a>
                 <a href="sign-in.html" class="button none" id="button">Get Started </a>
             </div>
-            <div></div>
+
         </div>
         <div>
 
@@ -80,49 +82,22 @@
     </div>
     <div class="body-about">
         <div class="bodyblog-0">
-            <form class="new-stt">
-                <textarea rows="3" class="txtContent" id="txtContent" ></textarea>
-                <div class="submit" type="submit" onclick="post()" >Post</div>
+            <form class="new-stt" id="newstt" method="post" runat="server" action="poststt.aspx">
+                <h1 style="text-align: center; margin-bottom: 16px">Post your thinking</h1>
+                <textarea rows="3" class="txtContent" id="txtContent" runat="server"></textarea>
+                <div class="submit" onclick="poststt()">Post</div>
             </form>
-            <div class="status" >
-                <div class="status-0">
-                    <div class="user">
-                        <img class="avt" src="images/avt-default.jpg" />
-
-                        <div class="name">
-                            bear1
-                        </div>
-                    </div>
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </div>
-
+            <div class="status" id="status" runat="server">
+                <div>
+                    <img src="images/avt-default.jpg" + />
+                    <span>bear1</span>
                 </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.</p>
             </div>
-            <div class="status" >
-                <div class="status-0">
-                    <div class="user">
-                        <img class="avt" src="images/avt-default.jpg" />
-
-
-                        <div class="name">
-                            bear1
-                        </div>
-                    </div>
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </div>
-
-                </div>
-            </div>
+           
         </div>
 
     </div>
@@ -143,7 +118,7 @@
             <div class="footer-right col-2">
 
                 <a class="footer-link" href="">You</a>
-                <a class="footer-link" href="">About</a>
+                <a class="footer-link" href="about.html">About</a>
                 <a class="footer-link" href="sign-in.html">Get Started</a>
                 <div class="icon">
                     <img src="images/twitter.png" alt="" class="ico">
@@ -155,4 +130,5 @@
 
     </div>
 </body>
+
 </html>

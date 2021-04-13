@@ -122,7 +122,7 @@
                         <a href="">You</a>
                     </div>
                     <div class="header-right-1 selected">
-                        <a href="">Blog</a>
+                        <a href="blog.aspx">Blog</a>
                     </div>
                     <div class="header-right-1">
                         <a href="about.aspx">About</a>
@@ -134,7 +134,7 @@
 
                 <div class="header-right">
                     <div class="header-right-2 setting">
-                        <a href="">Account </a>
+                        <a href="account.aspx">Account </a>
                     </div>
 
                     <a href="sign-in.html" class="header-right-2 setting setting-1" id="link1" runat="server">Get Started</a>
@@ -165,7 +165,7 @@
                 <a href="" class="select">Blog</a>
                 <a href="about.aspx" class="select">About</a>
                 <a href="contact.aspx" class="select">Contact</a>
-                <a href="" class="select">Account</a>
+                <a href="account.aspx" class="select">Account</a>
                 <a href="sign-in.html" class="button" id="button" runat="server">Get Started </a>
             </div>
             <div></div>
@@ -182,7 +182,6 @@
                 <textarea rows="3" class="txtContent" id="txtContent" runat="server"></textarea>
                 <div class="submit" onclick="poststt()">Post</div>
             </form>
-
 
             <div class="status" id="status" runat="server">
                 <img src="#" alt="Alternate Text" />
